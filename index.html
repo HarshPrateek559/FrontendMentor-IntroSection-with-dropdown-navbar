@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a class="logo">snap</a></li>
+      <li class="hovering">
+        <a href="#" id="feature">Feature
+          <img src="images/icon-arrow-down.svg">
+        </a>
+        <ul class="menu">
+          <img src="images/icon-todo.svg" alt=""><li><a href="#">TODO List</a></li>
+          <img src="images/icon-calendar.svg" alt=""><li><a href="#">Calender</a></li>
+          <img src="images/icon-reminders.svg" alt=""><li><a href="#">Remainders</a></li>
+          <img src="images/icon-planning.svg" alt=""><li><a href="#">Planner</a></li>
+        </ul>
+      </li>
+      <li class="hovering">
+        <a href="#" id="company">Company
+          <img src="images/icon-arrow-down.svg">
+        </a>
+        <ul class="company">
+          <li><a href="#">History</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Career</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Login</a></li>
+      <li><a href="#" id="signup">Register</a></li>
+    </ul>
+  </nav>
+  <main class="container">
+    <section class="section">
+      <section class="textSection">
+        <h1 class="heading">Make remote work</h1>
+        <p class="para">
+          Get your team in sync, no matter your location.
+          Streamline processes, create team rituals and watch productivity soar.
+        </p>
+        <button class="btn">Learn More</button>
+      </Section>
+      <footer class="footer">
+        <ul>
+          <li><img src="images/client-databiz.svg" alt=""></li>
+          <li><img src="images/client-audiophile.svg" alt=""></li>
+          <li><img src="images/client-meet.svg" alt=""></li>
+          <li><img src="images/client-maker.svg" alt=""></li>
+        </ul>
+      </footer>
+    </section>
+
+    <section class="imageSection">
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

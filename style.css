@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@602&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+nav {
+  background: whitesmoke;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  font-family: "Epilogue", serif;
+  font-size: 30px;
+  color: #000;
+  font-weight: 900;
+}
+
+#signup {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  color: black;
+  font-family: "Epilogue", serif;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+main {
+  height: 85vh;
+  width: 90vw;
+  display: flex;
+}
+
+.imageSection {
+  width: 50%;
+  height: 100%;
+  background: url("images/image-hero-desktop.png") no-repeat center center;
+  background-size: contain;
+}
+
+.textSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 100px;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Epilogue", serif;
+  padding: 100px;
+}
+
+.heading {
+  font-size: 60px;
+  font-weight: 900;
+  color: black;
+  text-align: left;
+}
+
+.para {
+  margin: 20px 0 20px 0;
+  font-size: 20px;
+  color: hsl(0, 0%, 41%);
+}
+
+.btn {
+  background-color: black;
+  color: #f5f5f5;
+  margin-top: 20px;
+  width: 130px;
+  height: 40px;
+  transition: 0.1s linear;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: #f5f5f5;
+  color: black;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.footer ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+  color: black;
+  font-family: "Epilogue", serif;
+}
+
+.section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hovering ul {
+  display: none;
+  position: fixed;
+  top: 50px;
+  z-index: 100;
+}
+
+.hovering:hover ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  background: white;
+  width: 140px;
+  height: 120px;
+  border-radius: 10px;
+  padding: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.hovering:hover .company {
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.hovering:hover .main{
+    height: 140px;
+}
+
+.main li{
+    margin: 10px;
+}

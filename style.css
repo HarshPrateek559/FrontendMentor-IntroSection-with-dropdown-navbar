@@ -163,32 +163,32 @@ main {
   padding: 10px;
 }
 
-.hovering a img{
+.hovering a img {
   animation: 0.2s ease-in rotated;
 }
 
-.hovering:hover a img{
+.hovering:hover a img {
   animation: 0.2s ease-in rotate 1 forwards;
 }
 
-nav ul li a:hover{
-color: black;
+nav ul li a:hover {
+  color: black;
 }
 
-@keyframes rotate{
-  0%{
+@keyframes rotate {
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(180deg);
   }
 }
 
-@keyframes rotated{
-  0%{
+@keyframes rotated {
+  0% {
     transform: rotate(180deg);
   }
-  100%{
+  100% {
     transform: rotate(0deg);
   }
 }
@@ -197,23 +197,23 @@ color: black;
   display: none;
 }
 
-@media  (max-width: 600px){
-nav{
-  display: none;
-}
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }
 
-.mobile-nav {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  top: 0;
-  padding: 10px;
-}
+  .mobile-nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    padding: 10px;
+  }
 
-  .container{
+  .container {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -227,17 +227,16 @@ nav{
   .imageSection {
     width: 100%;
     height: 100%;
-    background: url("images/image-hero-mobile.png") no-repeat ;
+    background: url("images/image-hero-mobile.png") no-repeat left;
     background-size: contain;
     position: relative;
-
   }
 
   .textSection {
     width: 100%;
     height: 100%;
     display: flex;
-    padding: 100px;
+    padding: 0px;
     flex-direction: column;
     align-items: center;
     font-family: "Epilogue", serif;
@@ -282,24 +281,28 @@ nav{
     background-color: #f5f5f5;
     width: 100%;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin: -105px;
   }
 
-  footer ul{
+  footer ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 50%;
+    grid-template-columns: 100px 100px 100px 100px;
   }
   .footer ul li {
     list-style: none;
-    display: inline-block;
-
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    margin: 0;
   }
 
-  .footer ul li img{
-    transform: scale(0.9);
+  .footer ul li img {
+    transform: scale(0.7);
   }
 
   .section {
@@ -309,5 +312,4 @@ nav{
     flex-direction: column;
     justify-content: space-around;
   }
-
 }

@@ -1,7 +1,7 @@
 let open = document.querySelector('.btn-open');
 let close = document.querySelector('.btn-close');
 let nav = document.querySelector(".mobile-nav");
-let container = document.querySelector(".container");
+
 
 open.onclick = function () {
     nav.style.width = "200px";

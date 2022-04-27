@@ -219,7 +219,7 @@ nav ul li a:hover {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   nav {
     display: none;
   }
@@ -227,7 +227,7 @@ nav ul li a:hover {
   .mobile-nav {
     display: block;
     background-color: #f5f5f5;
-    width: 200px;
+    width: 0px;
     height: 100vh;
     z-index: 100;
     position: fixed;
@@ -263,6 +263,7 @@ nav ul li a:hover {
   .btn-close{
     background: #f5f5f5;
     border: none;
+    display: none;
     position: absolute;
     top: 10px;
     right: 10px;
